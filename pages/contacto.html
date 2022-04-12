@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JHEquipamientos | Contacto</title>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/c3a150fd4e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header>
+
+        <nav class="navegador">
+            <img class="logo" src="../assets/logo/1647293066516.png" alt="logo" width="250px" height="80px">
+            <div class="titulo-subtitulo">
+                <h1 class="titulo-h1">EQUIPAMIENTOS & CAR WASH</h1>
+                <h2 class="titulo-h2">Jorge Herrera</h2>
+            </div>
+            <div class="iconos">
+                <i class="fa-brands fa-instagram"></i>
+
+                <i class="fa-brands fa-facebook"></i>
+
+                <i class="fa-brands fa-youtube"></i>
+
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <div class="menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        
+            <ul class="lista-secciones">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/equipamiento.html">Equipamiento</a></li>
+                <li><a href="../pages/carwash.html">Car Wash</a></li>
+                <li><a href="../pages/nosotros.html">Quienes somos</a></li>
+                <li><a href="#">Contacto</a></li>
+        
+            </ul>
+        </nav>
+    
+    </header>
+
+    <main>
+
+    <h2 class="bloque-seccion">CONTACTO / Turnos y consultas</h2>
+
+    <form class="formulario" action="procesar.php" method="">
+    <fieldset class="form-grid">
+        <h4>Completa con tus datos los campos requeridos</h4>
+        <p>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" placeholder="ingresa tu nombre" required>
+        </p>
+
+        <p>
+        <label for="apellido">Apellido: </label>
+        <input type="text" name="apellido" placeholder="ingresa tu apellido" required>
+        </p>
+        
+        <p>
+            <label for="email">Email: </label>
+            <input type="email" name="email" placeholder="ingresa tu email" required>
+        </p>
+
+        <p>
+            <label for="telefono">Telefono: </label>
+            <input type="tel" name="telefono" placeholder="ingresa tu telefono" required>
+        </p>
+
+        <h4>Provincia</h4>
+        <select name="Provincia" id="Provincia">
+            <option value="buenos aires">Buenos Aires</option>
+            <option value="ciudad autonoma">Ciudad Autonoma</option>
+            <option value="catamarca">Catamarca</option>
+            <option value="chaco">Chaco</option>
+            <option value="chubut">Chubut</option>
+            <option value="cordoba">Cordoba</option>
+            <option value="corrientes">Corrientes</option>
+            <option value="entre rios">Entre Rios</option>
+            <option value="formosa">Formosa</option>
+        </select>
+        
+        <div class="checkbox">
+            <label for="Tipo">Quieres recibir inormacion de nuestros productos </label>
+            <input type="checkbox" name="tipo" value="Turno">
+        </div>
+
+        <h4>Dejanos tu consulta</h4>
+
+        <textarea name="comentario" id="" cols="30" rows="10" placeholder="Escribi tu consulta" required></textarea>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar formulario">
+            <input type="button" value="sin acciones">
+        </p>
+
+
+    
+    
+    </fieldset>
+    </form>
+
+    </main>
+    
+    <footer class="piedepagina">
+        <div class="derechos">
+        <p>Todos los derechos reservados 2022</p>
+        </div>
+
+        <div class="seguime">
+            <h4>Seguime en mis redes sociales</h4>
+        </div>
+
+        <div class="iconos">
+            <i class="fa-brands fa-instagram"></i>
+
+            <i class="fa-brands fa-facebook"></i>
+
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </footer>
+    
+</body>
+</html>
