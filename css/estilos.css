@@ -9,7 +9,8 @@
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(100%, 30px, 60px);
     align-items: center;
-    background-image: linear-gradient(#AE2519 40%, black 90%);
+    /*background-image: linear-gradient(#AE2519 40%, black 90%);*/
+    background-image: url(../assets/images/fondo1.jpg);
 }
 
 .navegador .logo{
@@ -35,7 +36,7 @@
     justify-content: end;
     align-items: flex-end;
     margin-bottom: 0%;
-    color: black;
+    color: white;
 }
 
 .titulo-h2{
@@ -43,33 +44,48 @@
     justify-content: end;
     align-items: flex-start;
     margin-top: 0%;
-    color: black;
+    color: white;
 }
 
 .navegador .iconos{
-    font-size: large;
+    font-size: x-large;
     padding: 10px;
-    grid-column: 8/9;
-    grid-row: 2/3;
+    grid-column: 7/9;
+    grid-row: 3/4;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: white;
 }
 
 .navegador .lista-secciones{
+    margin-top: 35px;
+    margin-bottom: 35px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
     grid-row: 3/4;
-    grid-column: 2/8;
+    grid-column: 1/6;
+}
+
+.lista-secciones a{
+    margin: 0%;
+}
+
+.lista-secciones a:active{
+    background-color: #AE2519;
+}
+
+.separador{
+    border-top: 3px solid #AE2519;
 }
 
 .bloque-seccion{
-    font-family: Roboto;;
+    font-family: Roboto;
+    font-size: x-large;
     color: white;
-    block-size: 40px;
+    block-size: 30px;
     padding-left: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -78,6 +94,19 @@
     align-items: center;
 }
 
+main{
+    background-image: url(../assets/images/fondo1.jpg);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.carousel-item{
+    max-width: 700px;
+    margin-top: 5px;
+}
+/*
 .contenedor-imagen{
     background-image: radial-gradient(grey 10%, black);
     display: flex;
@@ -88,7 +117,7 @@
     border-color: black;
     border-radius: 50px;        
     }
-
+*/
 i{cursor: pointer;}
 
 a{
@@ -122,16 +151,25 @@ a{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: gray;
+    background-image: url(../assets/images/fondo1.jpg);
 }
 
-.imagen-equip{
-    border-radius: 30px;
+.card{
+    margin-bottom: 20px;
 }
 
 .color-fondo{
-    background-color: gray;
+    background-image: url(../assets/images/fondo1.jpg);
 }
+
+.color-fondo p{
+    color: white;
+}
+
+.color-fondo h3{
+    color: white;
+}
+
 
 .quienes-somos{
     margin: 0px;
@@ -148,10 +186,19 @@ h3{
     grid-template-rows: repeat(9,1fr);
 }
 
+.formulario h4{
+    color: #AE2519;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    display: flex;
+    align-items: center;
+}
+
 .form-grid{
-    background-color: gray;
+    background-image: url(../assets/images/fondo1.jpg);
     grid-column: 1/7;
-    grid-row: 1/10;
+    grid-row: 2/10;
+    justify-content: space-around;
 }
 
 .checkbox{
@@ -165,6 +212,7 @@ h3{
     background-image: linear-gradient(black 10%, #AE2519 40%);
     font-family: Roboto;
     font-weight: bold;
+    block-size: 40px;
 }
 
 .piedepagina .seguime{
@@ -173,3 +221,17 @@ h3{
     animation-iteration-count: infinite;
 }
 
+.seguime h5{
+    margin-top: 5px;
+    margin-bottom: 0%;
+}
+
+.derechos p{
+    margin-bottom: 0%;
+    margin-top: 5px;
+}
+
+.piedepagina .iconos{
+    font-size: x-large;
+    margin-top: 5px;
+}
