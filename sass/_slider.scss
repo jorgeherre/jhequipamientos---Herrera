@@ -1,0 +1,11 @@
+main {
+  background-image: url(../assets/images/fondo1.jpg);
+  .container {
+    display: flex;
+    justify-content: center;
+    .carousel-item {
+      max-width: 700px;
+      margin-top: 5px;
+    }
+  }
+}

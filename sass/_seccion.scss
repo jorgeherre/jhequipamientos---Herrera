@@ -1,0 +1,16 @@
+.bloque-seccion{
+    font-family: Roboto;
+    font-size: x-large;
+    color: white;
+    block-size: 30px;
+    padding-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: url("../assets/images/chapa.jpg");
+    display: flex;
+    align-items: center;
+}
+
+.separador{
+    border-top: 3px solid #AE2519;
+}

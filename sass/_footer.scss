@@ -1,0 +1,31 @@
+.piedepagina{
+    display: grid;
+    grid-template-areas: "derechos  seguime iconos";
+    align-items: center;
+    background-image: linear-gradient(black 10%, #AE2519 40%);
+    font-family: Roboto;
+    font-weight: bold;
+    block-size: 40px;
+    .seguime{
+        animation-name: headShake;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        h5{
+            margin-top: 5px;
+            margin-bottom: 0%;
+        }
+    }
+    .derechos{ 
+        p{
+            margin-bottom: 0%;
+            margin-top: 5px;
+        }
+    }
+    .iconos{
+        font-size: x-large;
+        margin-top: 5px;
+    }
+}
+
+
+
