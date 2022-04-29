@@ -1,0 +1,30 @@
+legend{
+    color: $bordo;
+}
+
+fieldset{
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    .formulario label{
+        color: white;
+    }
+    h5{
+        color: white;
+    }
+    .form-check{
+        border: 0px;
+        padding: 0px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        label{
+            color: white;
+        }
+        .checkbox{
+            padding-top: 15px;
+        }
+    }
+}
+
+

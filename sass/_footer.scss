@@ -2,7 +2,7 @@
     display: grid;
     grid-template-areas: "derechos  seguime iconos";
     align-items: center;
-    background-image: linear-gradient(black 10%, #AE2519 40%);
+    background-image: linear-gradient(black 10%, $bordo 40%);
     font-family: Roboto;
     font-weight: bold;
     block-size: 40px;

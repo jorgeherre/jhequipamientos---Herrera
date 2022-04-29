@@ -1,0 +1,36 @@
+@mixin container($margen-x, $margen-y, $borde-redondeado){
+    margin-right: $margen-x;
+    margin-bottom: $margen-y;
+    border-radius: $borde-redondeado;
+}
+
+.color-fondo {
+    p {
+        color: white;
+    }
+    h3 {
+        color: white;
+        padding-left: 5px;
+    }
+    background-image: url(../assets/images/fondo1.jpg);
+    .quienes-somos {
+        margin: 0px;
+        padding-left: 5px;
+    }
+    .contenedor-videos {
+        margin: 20px;
+        margin-bottom: 0px;
+        .video1 {
+            @include container(30px, 10px, 50px)
+        }
+        .video2 {
+            @include container(30px, 10px, 50px)
+        }
+        .video3 {
+            @include container(30px, 10px, 50px)
+        }
+        .video4 {
+            @include container(30px, 10px, 50px)
+        }
+    }
+}

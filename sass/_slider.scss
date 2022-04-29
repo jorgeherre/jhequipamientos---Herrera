@@ -1,4 +1,4 @@
-main {
+body {
   background-image: url(../assets/images/fondo1.jpg);
   .container {
     display: flex;
@@ -6,6 +6,7 @@ main {
     .carousel-item {
       max-width: 700px;
       margin-top: 5px;
+      margin-bottom: 5px;
     }
   }
 }
