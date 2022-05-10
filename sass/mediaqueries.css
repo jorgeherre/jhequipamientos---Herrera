@@ -20,7 +20,12 @@
         align-items: center;
     }
 
-    .navegador .logo{
+    .navegador .btn{
+        margin-top: 2.5px;
+        margin-bottom: 2.5px;
+    }
+
+    .navegador .logo-titulo{
         transform: scale(100%);
         display: flex;
         justify-content: center;
@@ -92,7 +97,7 @@
         justify-content: space-around;
     }
 
-    .navegador .logo-titulo .logo{
+    .navegador .logo-titulo{
         transform: scale(100%);
         display: flex;
         justify-content: center;
