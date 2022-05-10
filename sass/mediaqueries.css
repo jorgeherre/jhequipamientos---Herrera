@@ -1,27 +1,32 @@
 @media screen and (max-width: 600px){
 
     .navegador{
+        display: flex;
         margin-top: 0%;
-        max-height: 80px;
+        height: 100%;
         position: relative;
         align-items: center;
     }
-
 
     .navegador .iconos{
         display: none;
     }
 
-    .navegador .lista-secciones{
-        display: none;
+    .navegador .secciones-iconos .secciones{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        align-items: center;
     }
 
     .navegador .logo{
-        transform: scale(60%);
-        grid-column: 1/2;
+        transform: scale(100%);
+        display: flex;
+        justify-content: center;
     }
 
-    .navegador .titulo-subtitulo{
+    .navegador .logo-titulo .titulos{
         display: none;
     }
 
@@ -62,15 +67,16 @@
     }
 
     .marcas{
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
     }
 
 }
 
-@media (min-width:601px) and (max-width:767px){
+@media (min-width:601px) and (max-width:759px){
     .navegador{
         margin-top: 0%;
-        max-height: 80px;
+        height: 100%;
         position: relative;
         align-items: center;
     }
@@ -80,16 +86,19 @@
         display: none;
     }
 
-    .navegador .lista-secciones{
-        display: none;
+    .navegador .secciones{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
     }
 
-    .navegador .logo{
-        transform: scale(60%);
-        grid-column: 1/2;
+    .navegador .logo-titulo .logo{
+        transform: scale(100%);
+        display: flex;
+        justify-content: center;
     }
 
-    .navegador .titulo-subtitulo{
+    .navegador .logo-titulo .titulos{
         display: none;
     }
 
@@ -128,15 +137,16 @@
     }
 
     .marcas{
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
-@media (min-width:768px) and (max-width:986px){
+@media (min-width:760px) and (max-width:986px){
 
     .navegador{
         margin-top: 0%;
-        max-height: 80px;
+        height: 100%;
         position: relative;
         align-items: center;
     }

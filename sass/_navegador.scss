@@ -6,63 +6,74 @@
 
 .navegador {
   font-family: Roboto;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(100%, 30px, 60px);
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  height: auto;
   background-image: url(../assets/images/fondo1.jpg);
-  .logo {
-    border-radius: 15px;
-    margin: 5px;
-    grid-column: 1/3;
-    @extend %animacion;
-  }
-  .titulo-subtitulo {
-    display: flex;
-    flex-direction: column;
-    grid-column: 3/8;
-    @extend %animacion;
-  }
-  .titulo-h1 {
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
-    margin-bottom: 0%;
-    color: white;
-  }
-  .titulo-h2 {
-    display: flex;
-    justify-content: end;
-    align-items: flex-start;
-    margin-top: 0%;
-    color: white;
-  }
-  .iconos {
-    font-size: x-large;
-    padding: 10px;
-    grid-column: 7/9;
-    grid-row: 3/4;
-    display: flex;
-    justify-content: space-around;
-    color: white;
-  }
-  .lista-secciones {
-    margin-top: 35px;
-    margin-bottom: 35px;
-    list-style-type: none;
+  .logo-titulo{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-    grid-row: 3/4;
-    grid-column: 1/6;
-    a {
-      margin: 0%;
-      &:active {
-        background-color: $bordo;
+    width: 100%;
+    @extend %animacion;
+    .logo {
+      border-radius: 15px;
+      margin: 5px;
+      @extend %animacion;
+    }
+    .titulos{
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      margin-right: 35px;
+      width: 100%;
+      color: white;
+      .titulo-h1 {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 0%;
+      }
+      .titulo-h2 {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 0%;
       }
     }
   }
+  .secciones-iconos{
+    display: flex;
+    flex-direction: row;    
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    }
+    .secciones{
+      display: flex;
+      flex-direction: row;
+      width: 70%;
+      justify-content: space-around;
+      margin: 0%;
+      padding: 0%;
+    }
+  .iconos {
+    font-size: x-large;
+    padding-left: 60px;
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+  a {
+    margin: 0%;
+    &:active {
+    background-color: $bordo;
+    }
+  }
+}
+li{
+  list-style: none;
 }
 i{cursor: pointer;}
 
